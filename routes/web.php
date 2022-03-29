@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\albumController;
 use App\Http\Controllers\chansonController;
 
 /*
@@ -21,6 +22,4 @@ Route::get('/', function () {
 Route::get('chanson', [chansonController::class,
 'index'])->name('chansonindex');
 
-Route::get('album', function () {
-    return view('album');
-});
+Route::get('album/{id}', [albumController::class, 'details']); 

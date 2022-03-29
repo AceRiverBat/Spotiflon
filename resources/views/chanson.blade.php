@@ -12,7 +12,7 @@
     <h5 class="card-title">Titre : {{ $chanson->titre }}</h5>
     <p class="card-text">Artiste : {{ $chanson->auteur }}</p>
     <p class="card-text">Année : {{ $chanson->annee }}</p>
-    <a href="#" class="btn btn-primary">voir plus</a>
+    <a href="album/{{$chanson -> id}}" class="btn btn-primary">voir plus</a>
   </div>
 </div>
         </div>       

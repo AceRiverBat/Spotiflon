@@ -18,5 +18,10 @@ class chansonController extends Controller
         $chansons = Chanson::all();
         return view('chanson',compact('chansons'));
     }
+
+    public function create()
+{
+    return view('posts.create');
+}
     
 }
